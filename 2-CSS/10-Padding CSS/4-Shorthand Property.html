@@ -1,0 +1,51 @@
+<!--
+CSS Shorthand Padding – Padding Property Contains Two Values :-
+
+If the padding property contains two values, then the first value applies to the top and bottom padding,
+and the second value applies to the right and left padding.
+For Example – padding: 10px 20px i.e. top and bottom padding are 10px, right and left padding is 20px.
+
+Syntax:
+
+.element {
+    /* Applies 10px padding to top and bottom,
+    20px padding to right and left */
+    padding: 10px 20px;
+}
+Example: In this example, we are using a padding property with two values.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shorthand Padding</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+        }
+        h2 {
+            color: greenyellow;
+        }
+        .myDiv {
+            background-color: gray;
+            border: 4px solid black;
+            text-align: center;
+            width: 40%;
+
+            padding: 10px 20px;
+             /* Applies 10px padding to top and bottom, 
+               20px padding to right and left */
+        }
+    </style>
+</head>
+<body>
+    <h2>Computer Science</h2>
+    <div class="myDiv">
+        Padding to top and bottom,
+        and right and left sides Example.
+    </div>
+    
+</body>
+</html>

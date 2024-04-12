@@ -1,0 +1,51 @@
+<!--
+How to add CSS:-
+CSS is added to HTML pages to format the document according to information in the style sheet. There are three ways to insert CSS in HTML documents.
+(1) Inline CSS
+(2) Internal CSS
+(3) External CSS
+(1) Inline CSS:-
+Inline CSS is used to apply CSS on a single line or element.
+For example:- <p style="color:blue">Hello CSS</p>  
+(2) Internal CSS:-
+Internal CSS is used to apply CSS on a single document or page. It can affect all the elements of the page. It is written inside the style tag within head section of html.
+For example: 
+<style>  
+p{color:blue}  
+</style>  
+(3) External CSS:-
+External CSS is used to apply CSS on multiple pages or all pages. Here, we write all the CSS code in a css file. Its extension must be .css for example style.css.
+For example:- p{color:blue}  
+You need to link this style.css file to your html pages like this:
+<link rel="stylesheet" type="text/css" href="style.css">  
+The link tag must be used inside head section of html.
+Example:- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--External CSS-->
+    <link rel="stylesheet" type:"text/css" href="style.css">
+    <!--Internal CSS-->
+  <style>
+        p{
+            color: blue;
+        }
+        p{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <!--Inline CSS-->
+    <p>Paragraph 1</p>
+    <hr>
+    <p style="color: green; font-size: 18px;">Paragraph 2</p>
+    <hr>
+    <p>Paragraph 3</p>
+</body>
+</html>
+
+-->

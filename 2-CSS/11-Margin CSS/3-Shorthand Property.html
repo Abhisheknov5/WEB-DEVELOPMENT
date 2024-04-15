@@ -1,0 +1,56 @@
+<!--
+Margin – Shorthand Property
+CSS, the margin shorthand property allows you to set the margin on all sides (top, right, bottom, left) of an element in a single line. with some combinations so we can easily apply padding to our targeted element.
+
+If the margin property has one value
+If the margin property contains two values
+If the margin property contains three values
+If the margin property contains four values
+
+Method 1: If Margin Property has one Value
+If the margin property has one value of margin:20px; The margin property with one value of 20px applies 20 pixels of margin to all sides equally.
+
+Syntax:
+.element {
+    margin: 20px;
+    /* Applies 20px margin to all sides */
+}
+Example: In this example, we are using a margin property with single values.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shorthand Property</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+        }
+        h2 {
+            color: blue;
+        }
+        .parentDiv {
+            background-color: lightgray;
+            border: 5px solid black;
+            padding: 20px;
+            width: 40%;
+        }
+        .childDiv {
+            background-color: wheat;
+            /* Applying 20px margin to all sides */
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Computer Science</h2>
+    <div class="parentDiv">
+        <div class="childDiv">
+            Margin Box
+        </div>
+    </div>
+    
+</body>
+</html>

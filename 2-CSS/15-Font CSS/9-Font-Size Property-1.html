@@ -1,0 +1,73 @@
+<!--
+CSS font-size Property :-
+
+The font-size property in CSS is used to set the font size of text in HTML document.
+
+Syntax:  
+
+font-size: medium|xx-small|x-small|small|large|x-large
+           |xx-large|smaller|larger|length|initial|inherit;
+Default Value: medium
+
+Property Values: 
+
+absolute-size: The absolute-size is used to set the font size absolutely. The default value of absolute-size is medium.
+The list of absolute-size properties are xx-small, x-small, small, medium, large, x-large, xx-large.
+relative-size: It contains two values smaller and larger. The font-size is smaller or larger depends on the parent element. 
+length: This property is used to set the font-size in length. The length can be in the form of px, cm etc. 
+global: This property contains three types of values such as initial | inherit | unset.
+Syntax: 
+
+font-size: medium|xx-small|x-small|small|large|x-large|xx-large;
+Example: In this example, we are using abe explained property.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font-size</title>
+    <style>
+        .xxsmall {
+            color: red;
+            font-size: xx-small;
+        }
+        .xsmall {
+            color: red;
+            font-size: x-small;
+        }
+        .small {
+            color: red;
+            font-size: small;
+        }
+        .medium {
+            color: red;
+            font-size: medium;
+        }
+        .large {
+            color: red;
+            font-size: large;
+        }
+        .xlarge{
+            color: red;
+            font-size: x-large;
+        }
+        .xxlarge {
+            color: red;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <h1>font-size property</h1>
+
+    <div class="xxsmall">font-size: xx-small;</div>
+    <div class="xsmall">font-size: x-small;</div>
+    <div class="small">font-size: small;</div>
+    <div class="medium">font-size: medium;</div>
+    <div class="large">font-size: large;</div>
+    <div class="xlarge">font-size: x-large;</div>
+    <div class="xxlarge">font-size: xx-large;</div>
+    
+</body>
+</html>

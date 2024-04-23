@@ -1,0 +1,49 @@
+<!--
+CSS font-family Property:-
+
+The font-family property specifies the font of an element.
+It can have multiple fonts as a backup system i.e. if the browser doesn’t support one font then the other can be used.
+In other words, this property is used to specifies the family-name &/or generic-family, based on the priority from the list, for the selected element.
+
+The font-family can be categorized into 2 types:
+
+family-name: It contains the name of a font-family, such as “times”, “courier”, “arial”, etc.
+generic-family: It contains name of a generic-family, such as”serif”, “sans-serif”, “cursive”, “fantasy”, “monospace”.
+Syntax: 
+
+element_selector {
+    font-family: family-name|generic-family|initial|inherit;
+} 
+Property values:
+
+fonts-name: This specifies the name of the font in quotes separated by commas.
+generic-family: It is used to set the font of text in an HTML document from the list of available fonts from the font pool.
+initial: It is used to set an element’s CSS property to its default value.
+inherit: It is used to inherit a property to an element from its parent element property value.
+Note: The font-name can be declared with the single quotes when using the style attribute in the HTML & also it must be quoted when it contains white space.
+
+We will understand the usage of the font-family property by implementing it.
+
+Example: This example illustrates the use of the font-family property.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font family Properties</title>
+    <style>
+        .para1 {
+            font-family: "Impact", Times, serif;
+        }
+        .para2 {
+            font-family: "Arial", Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Font-Family Property</h1>
+    <p class="para1">Computer Science in Impact font...</p>
+    <p class="para2">Computer Science in Arial font...</p>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!--
+(4) font-style:Inherit: This inherits property from its parent element.
+
+Example: In this example, we have set the value of color as inherit that will be inheriting the color property from its parent element.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inherit</title>
+    <style>
+        span {
+            color: blue;
+            font-size: 50px;
+        }
+        .extra span{
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>Computer Science</span>
+    </div>
+    <div class="extra"
+         style="color: green">
+         <span>Computer Science</span>
+    </div>
+    <div style="color:red">
+        <span>Computer Science</span>
+    </div>
+</body>
+</html>

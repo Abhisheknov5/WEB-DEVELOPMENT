@@ -1,0 +1,55 @@
+<!--
+CSS Properties of Links: Some basic CSS properties of links are given below: 
+
+color
+font-family
+text-decoration
+background-color
+color: This CSS property is used to change the color of the link text. 
+
+Syntax:
+
+a {
+    color: color_name;
+}
+Example: This example shows the use of the color property in links.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link CSS</title>
+    <style>
+        p {
+            font-size: 20px;
+            text-align: center;
+        }
+        /*unvisited link will appear green*/
+        a:link {
+            color: red;
+        }
+        /*visited link will appear blue*/
+        a:visited{
+            color: blue;
+        }
+        /*when mouse hovers over link it will appear orange*/
+        a:hover {
+            color: orange;
+        }
+        /*when the link is clicked, it will appear black*/
+        a:active {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <a href="https://www.geeksforgeeks.org/">
+            geeksforgeeks
+        </a>
+        This link will change colours with different states...
+    </p>
+</body>
+</html>
+

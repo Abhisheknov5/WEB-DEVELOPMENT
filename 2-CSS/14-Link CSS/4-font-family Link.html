@@ -1,0 +1,52 @@
+<!--
+font-family: This property is used to change the font type of a link using font-family property. 
+
+Syntax: 
+
+a {
+    font-family: "family name";
+}
+Example: This example shows the use of the font-family property in links.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font-family</title>
+    <style>
+        /*Initial link font family arial*/
+        a {
+            font-family: Arial;
+        }
+        p {
+            font-size: 30px;
+            text-align: center;
+        }
+        /*unvisited link font family*/
+        a:link {
+            color: Arial;
+        }
+        /*visited link font family*/
+        a:visited{
+            font-family: Arial;
+        }
+        /*when mouse hovers over it will change to times new roman*/
+        a:hover {
+            font-family: Times new roman;
+        }
+        /*when the link is clicked, it will changed to Comic sans ms*/
+        a:active {
+            font-family: comic Sans MS;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <a href="https://www.geeksforgeeks.org/" id="link">
+            geeksforgeeks
+        </a>
+        a Computer Science Portal for Geks....
+    </p>
+</body>
+</html>

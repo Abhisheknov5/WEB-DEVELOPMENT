@@ -1,0 +1,95 @@
+<!--
+CSS font-weight Property :-
+
+The font-weight property of the CSS is used to set the weight or thickness of the font being used with the HTML Text.
+The font-weight applied will depend on font-family used and the browser. For instance, some font-family is available only in specific weights.
+
+Syntax:
+
+font-weight: normal|bold|lighter|bolder|number|initial|inherit|unset;
+Property Values:
+
+normal: This is the default font-weight & defines the normal font-weight. It is equal to the number value 400.
+bold: This defines the bold font-weight, it is equal to the number value 700.
+lighter: This makes the font-weight one level lighter than the parent element, considering the available font weights of the font family.
+bolder: This makes the font-weight one level heavier than the parent element, considering the available font weights of the font family.
+number: This sets the font-weight according to the number specified. The number can range between 1 to 1000. If the exact weight is unavailable, a suitable weight is applied.
+
+Global Values:
+
+initial: This sets the font-weight to the initial(default) value.
+inherit: This sets the font-weight equal to the value inherited from its parent element.
+unset: This sets the font-weight equal to the value inherited from its parent element since font-weight is an inheritable property.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font-weight property</title>
+    <style>
+        body {
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+        p.one {
+            font-weight: bold;
+        }
+        p.two {
+            font-weight: lighter;
+        }
+        p.three {
+            font-weight: 1000;
+        }
+        p.four {
+            font-weight: initial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Computer Science</h1>
+    <h3>CSS font-weight Property</h3>
+    <!--font-weight: bold; length; property -->
+
+    <p class="one"> 
+        Prepare for the Recruitment drive of product based  
+        companies like Microsoft, Amazon, Adobe etc with a  
+       free online placement preparation course.  
+       The course focuses on various MCQ's & Coding  
+       question likely to be asked in the interviews  
+       & make your upcoming placement season efficient  
+       and successful.
+    </p>
+
+    <!-- font-weight: lighter; length; property -->
+    <p class="two">
+        Prepare for the Recruitment drive of product based  
+        companies like Microsoft, Amazon, Adobe etc with a  
+        free online placement preparation course. The course  
+        focuses on various MCQ's & Coding question likely to 
+        be asked in the interviews & make your upcoming  
+        placement season efficient and successful. 
+    </p>
+
+      <!-- font-weight: 1000; length; property -->
+      <p class="three">
+        Prepare for the Recruitment drive of product based  
+        companies like Microsoft, Amazon, Adobe etc with  
+        a free online placement preparation course. The  
+        course focuses on various MCQ's & Coding question  
+        likely to be asked in the interviews & make your  
+        upcoming placement season efficient and successful. 
+      </p>
+
+      <!-- font-weight: initial; length; property -->
+      <p class="four">
+        Prepare for the Recruitment drive of product based  
+        companies like Microsoft, Amazon, Adobe etc with a  
+        free online placement preparation course. The course  
+        focuses on various MCQ's & Coding question likely to  
+        be asked in the interviews & make your upcoming  
+        placement season efficient and successful.
+      </p>
+    
+</body>
+</html>

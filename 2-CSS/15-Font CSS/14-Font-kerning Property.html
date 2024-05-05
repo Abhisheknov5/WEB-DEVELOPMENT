@@ -1,0 +1,56 @@
+<!--
+CSS font-kerning Property:-
+
+This property is used to control the usage of the Kerning Information that has been stored in the Font. Kerning defines how letters are spaced. This property will have no visible effect on those fonts that do not have kerning information.
+
+Syntax:  
+
+font-kerning: auto|normal|none;
+Default Value: auto 
+
+Property:  
+
+auto: It is the default value. The Browser decides whether font-kerning is applied or not.
+normal: It is used to specify that font-kerning is applied normally on the browsers.
+none: It is used to specify that font-kerning is not applied.
+Example:  In this example, we are using the above-explained method.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS | font-kerning Property</title>
+    <style>
+        div {
+            font-family: serif;
+            font-size: px;
+            font-weight: bold;
+        }
+        div.geeks {
+            font-kerning: normal;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Computer Science</h1>
+    <h2>The font-keing Property</h2>
+    <h3>font-keing:normal</h3>
+    <div class="a">
+        Computer Science:
+        A Computer Science is Branch of Engineering..
+    </div>
+    <h3>font-keing:auto</h3>
+    <div class="b">
+        Computer Science:
+        A Computer Science is Branch of Engineering..
+    </div>
+    <h3>font-keing:none</h3>
+    <div class="c">
+        Computer Science:
+        A Computer Science is Branch of Engineering..
+    </div>
+</body>
+</html>

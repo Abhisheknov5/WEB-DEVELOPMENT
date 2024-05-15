@@ -115,7 +115,7 @@ let x2 = 2; // Allowed
 console.log(x2);
 
 /*
-Let Hoisting
+Let Hoisting :-
 Variables defined with var are hoisted to the top and can be initialized at any time.
 Meaning: You can use the variable before it is declared.
 */

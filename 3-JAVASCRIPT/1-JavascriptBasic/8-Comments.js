@@ -33,3 +33,12 @@ and the paragraph with id = "myP"
 in my web page:
 */
 console.log('Abhishek');
+/*
+Using Comments to Prevent Execution:-
+Using comments to prevent execution of code is suitable for code testing.
+Adding // in front of a code line changes the code lines from an executable line to a comment.
+This example uses // to prevent execution of one of the code lines:
+Example
+//document.getElementById("myH").innerHTML = "My First Page";
+document.getElementById("myP").innerHTML = "My first paragraph.";
+*/

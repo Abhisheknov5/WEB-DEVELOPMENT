@@ -1,0 +1,40 @@
+<!--
+How to apply !important in CSS?
+
+The !important property in CSS is used to provide more weight (importance) than normal property.
+In CSS, the !important means that “this is important”, ignore all the subsequent rules, and apply !important rule. The !important keyword must be placed at the end of the line, immediately before the semicolon.
+
+In other words, it adds importance to all the sub-properties that the shorthand property represents.
+In normal use, a rule defined in an external style sheet which is overruled by a style defined in the head of the document,
+which in turn, is overruled by an inline style within the element itself (assuming equal specificity of the selectors).
+So, it is used for overriding the styles that are previously declared in other style sources, in order to achieve a certain design.
+Syntax:
+
+element {
+    color: blue  !important;
+    font-size: 14px !important; 
+    ...
+}
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>! Important</title>
+    <style>
+        h1 {
+            color: blue;
+        }
+        body {
+            background-color: red !important;
+            text-align: center;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Computer Science</h1>
+    <h2>!important property</h2>
+</body>
+</html>

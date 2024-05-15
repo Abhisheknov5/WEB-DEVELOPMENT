@@ -297,3 +297,6 @@ console.log(Array.isArray(fruit8));
 console.log('23 instance of Operator');
 const fruit9 = ["Banana", "Orange", "Apple"];
 console.log(fruit9 instanceof Array);
+
+
+

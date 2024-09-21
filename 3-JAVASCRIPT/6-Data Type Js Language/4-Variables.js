@@ -13,6 +13,7 @@ x = 10;
 y = 20;
 z = x + y;
 console.log('The value of Z is=' + z);
+// Output is = 30
 
 /* Var:-
 The var keyword was used in all JavaScript code from 1995 to 2015.
@@ -24,16 +25,19 @@ var x1 = 5;
 var y1 = 5;
 var z1 = x1 + y1;
 console.log('The value of z=', z1);
+// Output is = 10
 
 let x2 = 5; 
 let y2 = 5;
 let z2 = x2 + y2;
 console.log('The value of z=', z2);
+// Output is = 10
 
 const x3 = 5;
 const y3 = 5;
 const z3 = x2 + y2;
 console.log('The value of z=', z3);
+// Output is = 10
 
 // Mixed Example
 console.log('3 Mixed Example');
@@ -41,6 +45,7 @@ const price1 = 10;
 const price2 =20;
 let total = price1 + price2;
 console.log('Mixed value is:',total);
+// Output is = 30
 
 /*
 The two variables price1 and price2 are declared with the const keyword.
@@ -94,9 +99,9 @@ console.log('4 Data types');
 const pi = 3.14;
 let person = "Abhishek";
 let answer = "Yes I am!";
-console.log(pi);
-console.log(person);
-console.log(answer);
+console.log(pi); // 3.14
+console.log(person); // Abhishek
+console.log(answer); // Yes I am!
 
 /*
 Declaring a JavaScript Variable:-
@@ -114,7 +119,8 @@ In the example below, we create a variable called carName and assign the value "
 */
 console.log('5 Declaring a JavaScript Variable');
 let carName = "Volvo";
-console.log(carName);
+console.log(carName); 
+// Output is = volvo
 
 /*
 One Statement, Many Variables:-
@@ -124,6 +130,7 @@ Start the statement with let and separate the variables by comma:
 console.log('6 One Statement, Many Variables');
 let persons = "Abhishek", carNamee = "Magnite", price = 100;
 console.log("You can declare many variables in one statement=",carNamee);
+// Output = You can declare many variables in one statement= Magnite
 
 // A declaration can span multiple lines:
 console.log('7 A declaration can span multiple lines');
@@ -131,6 +138,7 @@ let personss = "John Doe",
 carNames = "Volvo",
 prices = 200;
 console.log('A declaration can span multiple lines:', carNames);
+// Output is = A declaration can span multiple lines: Volvo
 
 /*
 Value = undefined :-
@@ -141,6 +149,7 @@ The variable carName will have the value undefined after the execution of this s
 console.log('8 Value = undefined');
 let bikeName;
 console.log(bikeName);
+// Output is = undefined
 
 /*
 Re-Declaring JavaScript Variables:-
@@ -150,6 +159,7 @@ The variable carName will still have the value "Volvo" after the execution of th
 console.log('9 Re-Declaring JavaScript Variables');
 var bikeNamee = "Duke";
 console.log(bikeNamee);
+// Output is = Duke
 
 /*Note
 You cannot re-declare a variable declared with let or const.
@@ -164,15 +174,17 @@ As with algebra, you can do arithmetic with JavaScript variables, using operator
 */
 console.log('10 JavaScript Arithmetic');
 let n = 5 + 2 + 3;
-console.log(n);
+console.log(n); // 10
 
 // You can also add strings, but strings will be concatenated.
 console.log('11 String concatenated');
 let p = "Abhishek" + " " + "Sharma";
 console.log(p);
+// Output is = Abhishek Sharma
 
 let t1 = "5" + 2 + 3;
 console.log(t1);
+// Output is = 523
 
 /*
 JavaScript Dollar Sign $
@@ -184,7 +196,7 @@ console.log('12 JavaScript Dollar Sign $');
 let $ = "Hello World";
 let $$$ = 2;
 let $myMoney = 5;
-console.log($$$ + $myMoney);
+console.log($$$ + $myMoney); // 7
 
 /*
 JavaScript Underscore (_) :-
@@ -193,5 +205,5 @@ Since JavaScript treats underscore as a letter, identifiers containing _ are val
 console.log('13 JavaScript Underscore (_) ');
 let _x = 2;
 let _100 = 5;
-console.log(_x + _100);
+console.log(_x + _100); // 7
 

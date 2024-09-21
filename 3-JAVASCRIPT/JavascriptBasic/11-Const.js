@@ -1,6 +1,6 @@
 // Const
 /*
-onst:-
+const:-
 The const keyword was introduced in ES6 (2015).
 Variables defined with const cannot be Redeclared.
 Variables defined with const cannot be Reassigned.

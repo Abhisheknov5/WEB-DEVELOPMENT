@@ -8,13 +8,13 @@ Variable values are called Variables */
 
 // 1 Numbers:- Numbers are written with or without decimals.
 console.log('1 Numbers');
-console.log(10.50);
-console.log(1001);
+console.log(10.50); // 10.5
+console.log(1001);  // 1001
 
 // 2 Strings are text, written within double or single quotes.
 console.log('2 Strings');
-console.log("Abhishek");
-console.log('Abhishek');
+console.log("Abhishek"); // Abhishek
+console.log('Abhishek'); // Abhishek
 /*
 JavaScript Variables:-
 In a programming language, variables are used to store data values.
@@ -26,12 +26,14 @@ console.log('3 Variables');
 let x;
 x = 6;
 console.log('X is assigned the value of\n', x);
+// Output is = 6
 /*
 JavaScript Operators
 JavaScript uses arithmetic operators ( + - * / ) to compute values.
 */
 console.log('4 JavaScript Operators');
 console.log((5 + 6) * 10);
+// Output is = 110
 
 /* Assignment Operator:-
 JavaScript uses an assignment operator ( = ) to assign values to variables.
@@ -41,6 +43,7 @@ let x1, y1;
 x1 = 10;
 y1 = 20;
 console.log('Assignment Operator=\n',x1+y1);
+// Output is = 30
 
 /*
 JavaScript Expressions:-
@@ -48,16 +51,17 @@ An expression is a combination of values, variables, and operators, which comput
 The computation is called an evaluation.
 For example, 5 * 10 evaluates to 50. */
 console.log('6 JavaScript Expressions');
-console.log(5 * 10);
+console.log(5 * 10); // 50
 
 let d;
 d = 5;
 console.log("Expressions can also contain variable values:",d * 20);
+// Output is = 100
 
 /*The values can be of various types, such as numbers and strings.
 For example, "John" + " " + "Doe", evaluates to "John Doe".
 */
-console.log("John" + " " + "Doe");
+console.log("John" + " " + "Doe"); // john Doe
 /*
 JavaScript Keywords:-
 JavaScript keywords are used to identify actions to be performed.
@@ -68,6 +72,7 @@ let x2, y2;
 x2 = 10 + 20;
 y2 = 30 + 40;
 console.log('The let Keyword Creates Variables:', x2 + y2);
+// Output is = 100
 
 /*
 JavaScript Comments
@@ -78,7 +83,7 @@ console.log('8 Comments');
 let s;
 s = 5;
 // s = 6; I will not be executed.
-console.log(s);
+console.log(s); // 5
 
 /* JavaScript Identifiers / Names:-
 Identifiers are JavaScript names.
@@ -98,7 +103,7 @@ console.log('9 Case Sensitive');
 let lastname, lastName;
 lastName = "Kumar";
 lastname = "Sharma";
-console.log(lastName);
+console.log(lastName); // kumar
 
 /* JavaScript and Camel Case:-
 Historically, programmers have used different ways of joining multiple words into one variable name:

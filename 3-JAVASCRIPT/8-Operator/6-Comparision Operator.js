@@ -25,3 +25,21 @@ Comparison operators can be used in conditional statements to compare values and
 
 if (age < 18) text = "Too young to buy alcohol";
 */
+console.log('(1) Comparison Operators');
+// Declare a variable x
+let x = 5;
+
+// Comparison operators and their results
+console.log("x == 8: " + (x == 8));         // false
+console.log("x == 5: " + (x == 5));         // true
+console.log("x == '5': " + (x == '5'));     // true
+console.log("x === 5: " + (x === 5));       // true
+console.log("x === '5': " + (x === '5'));   // false
+console.log("x != 8: " + (x != 8));         // true
+console.log("x !== 5: " + (x !== 5));       // false
+console.log("x !== '5': " + (x !== '5'));   // true
+console.log("x !== 8: " + (x !== 8));       // true
+console.log("x > 8: " + (x > 8));           // false
+console.log("x < 8: " + (x < 8));           // true
+console.log("x >= 8: " + (x >= 8));         // false
+console.log("x <= 8: " + (x <= 8));         // true

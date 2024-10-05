@@ -41,22 +41,20 @@ for (variable of iterable) {
 Iterating :-
 
 - Iterating is easy to understand.
-
 - It simply means looping over a sequence of elements.
-
 -Here are some easy examples:
 
-Iterating over a String
-Iterating over an Array
+- Iterating over a String
+- Iterating over an Array
 
 */
 /*
-Iterating Over a String :-
+(1) Iterating Over a String :-
 
 You can use a for..of loop to iterate over the elements of a string.
 */
 console.log(' The For Of Loop');
-console.log('1 Iterating Over a String');
+console.log('(1) Iterating Over a String');
 
 // Create a String
 const name = "Abhishek";
@@ -68,11 +66,11 @@ for(const x of name) {
 // Op is Abhishek
 
 /*
-Iterating Over an Array:-
+(2) Iterating Over an Array:-
 
 - You can use a for..of loop to iterate over the elements of an Array.
 */
-console.log('2 Iterating Over an Array 1');
+console.log('(2) Iterating Over an Array 1');
 
 const letters = ["a","b","c","d"];
 
@@ -92,11 +90,11 @@ for(const x of numbers) {
 // Op is 2 4 6 8
 
 /*
-Iterating Over a Set :-
+(3) Iterating Over a Set :-
 
-You can use a for..of loop to iterate over the elements of a Set:
+- You can use a for..of loop to iterate over the elements of a Set:
 */
-console.log('3 Iterating Over a Set');
+console.log('(3) Iterating Over a Set ');
 
 // Create a set
 const a = new Set(["a","b","c","d","e","f"]);
@@ -104,14 +102,14 @@ const a = new Set(["a","b","c","d","e","f"]);
 for(const x of a){
         console.log(x);
 }
-
+// Op is = a b c d e f
 /*
-Iterating Over a Map:-
+(4) Iterating Over a Map:-
 
-You can use a for..of loop to iterate over the elements of a Map:
+- You can use a for..of loop to iterate over the elements of a Map:
 */
 
-console.log('4 Iterating Over a Map');
+console.log('(4) Iterating Over a Map');
 
 // Create a Map
 const fruits = new Map([
@@ -132,13 +130,140 @@ for(const x of fruits){
 // Oranges,200
 
 /*
-In short, console.log(x[0] + "," + x[1]); does the following:
+(5) JavaScript Iterators :-
+- The iterator protocol defines how to produce a sequence of values from an object.
+- An object becomes an iterator when it implements a next() method.
+- The next() method must return an object with two properties:
 
-x[0] is the key from the Map (e.g., "apples").
-x[1] is the value (e.g., 500).
-The + operator concatenates the key, a comma ,, and the value into a single string (e.g., "apples,500").
-console.log() then prints this string to the console.
-It outputs each map entry in the key,value format.
+- value (the next value)
+- done (true or false)
+
+value :- The value returned by the iterator
+(Can be omitted if done is true)
+
+done :-	true if the iterator has completed
+false if the iterator has produced a new value
+
+Note:-
+- Technically, iterables must implement the Symbol.iterator method.
+- String, Array, TypedArray, Map and Set are all iterables, because their prototype objects have a Symbol.iterator method.
+
+(6) Home Made Iterable :-
+- This iterable returns never ending: 10,20,30,40,.... Everytime next() is called:
+*/
+console.log('(5) JavaScript Iterators');
+console.log('(6) Home Made Iterable');
+
+// Home iterable
+// This function returns an object with a `next()` method that generates numbers
+function myNumbers(){
+    // Initialize the number at 0
+    let n = 0;
+    return {
+        // The next method increments n by 10 and returns the new value
+        next: function() {
+            n += 10;
+            // Return object with the current value and done set to false
+            return {value: n, done: false};
+
+        }
+    };
+}
+// Create an Instance of the Iterables
+const n = myNumbers();
+
+// Calling the next() method and logging the result to the console
+console.log(n.next().value); // Op is = 10
+console.log(n.next().value); // Op is = 20
+console.log(n.next().value); // Op is = 30
+console.log(n.next().value); // Op is = 40
+/*
+/*
+- The problem with a home made iterable:
+- It does not support the JavaScript for..of statement.
+
+(7) Symbol.iterator :-
+- A JavaScript iterable is an object that has a Symbol.iterator.
+- The Symbol.iterator is a function that returns a next() function.
+- An iterable can be iterated over with the code: for (const x of iterable) { }
+*/
+console.log('(7) Symbol.iterator ');
+/*
+// Create an empty object
+const myNumbers = {};
+
+// Make the object iterable by assigning the Symbol.iterator method
+myNumbers[Symbol.iterator] = function() {
+  let n = 0;
+  let done = false;
+  
+  // Return the iterator object with the next() method
+  return {
+    next() {
+      // Increment n by 10
+      n += 10;
+      
+      // When n reaches 100, set done to true to stop iteration
+      if (n == 100) {
+        done = true;
+      }
+      
+      // Return the current value of n and the status of 'done'
+      return {value: n, done: done};
+    }
+  };
+};
+
+// Using a for..of loop to iterate over the iterable object
+for (const num of myNumbers) {
+  console.log(num); // Outputs the current value of num
+}
+ // Op is : 10 20 30 40 50 60 70 80 90
+*/
+
+/*
+- The Symbol.iterator method is called automatically by for..of.
+- But we can also do it "manually":
+
+// Create an Object
+const myNumbers = {};
+
+// Make the object iterable by assigning the Symbol.iterator method
+myNumbers[Symbol.iterator] = function() {
+  let no = 0;
+  let done = false;
+  
+  // Return an iterator object with the next() method
+  return {
+    next() {
+      // Increment no by 10
+      no += 10;
+      
+      // When no reaches 100, set done to true to stop iteration
+      if (no == 100) {
+        done = true;
+      }
+      
+      // Return the current value of no and the status of 'done'
+      return { value: no, done: done };
+    }
+  };
+};
+
+// Create an Iterator
+let iterator = myNumbers[Symbol.iterator]();
+
+// Use a while loop to iterate until done is true
+while (true) {
+  const result = iterator.next();
+  
+  // Break the loop if done is true
+  if (result.done) break;
+  
+  // Output the value of result to the console
+  console.log(result.value);  // Outputs 10, 20, 30, ... up to 90
+}
+// Op is : 10 20 30 40 50 60 70 80 90
 */
 
 

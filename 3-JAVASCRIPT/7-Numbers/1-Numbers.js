@@ -1,6 +1,18 @@
-/////  JavaScript Numbers ////
-// JavaScript has only one type of number. Numbers can be written with or without decimals.
-console.log('Numbers');
+/*
+(1) JavaScript Numbers 
+(2) Integer Precision
+(3) Floating Precision 
+(4) Numeric Strings 
+(5) NaN - Not a Number
+(6) Infinity
+(7) Hexadecimal 
+(8) JavaScript Numbers as Objects
+*/
+/*
+(1) JavaScript Numbers :-
+- JavaScript has only one type of number. Numbers can be written with or without decimals.
+*/
+console.log('(1) JavaScript Numbers ');
 let x = 3.14; // A number with decimals
 let y = 3;    // A number without decimals
 console.log('Numbers can be written with or without decimals:');
@@ -15,21 +27,21 @@ console.log(x1); // 12300000
 console.log(y1); // 0.00123
 
 /*
-Integer Precision
-Integers (numbers without a period or exponent notation) are accurate up to 15 digits.
-The maximum number of decimals is 17.
+(2) Integer Precision :-
+- Integers (numbers without a period or exponent notation) are accurate up to 15 digits.
+- The maximum number of decimals is 17.
 */
-console.log('Integer Precision');
+console.log('(2) Integer Precision ');
 let x3 = 999999999999999;   
 let y3 = 9999999999999999; 
 console.log(x3);  // x will be 999999999999999
 console.log(y3);  // y will be 10000000000000000
 
 /*
-Floating Precision
-Floating point arithmetic is not always 100% accurate.
+(3) Floating Precision :-
+- Floating point arithmetic is not always 100% accurate.
 */
-console.log('Floating Precision');
+console.log('(3) Floating Precision ');
 let n = 0.2 + 0.1;
 console.log("Floating point arithmetic is not always 100% accurate\n",n);
 // Output is =  0.30000000000000004
@@ -80,11 +92,11 @@ let result = x9 + y9 + z9;
 console.log(result); // 3030
 
 /*
-Numeric Strings
-JavaScript strings can have numeric content.
-JavaScript will try to convert strings to numbers in all numeric operations.
+(4) Numeric Strings :-
+- JavaScript strings can have numeric content.
+- JavaScript will try to convert strings to numbers in all numeric operations.
 */
-console.log('Numeric Strings');
+console.log('(4) Numeric Strings ');
 let x10 = "100"; 
 let y10 = "10"; 
 let z10 = x10 / y10;
@@ -98,11 +110,11 @@ let z11 = x11 + y11;
 console.log(z11); // 10010
 
 /*
-NaN - Not a Number
-NaN is a JavaScript reserved word indicating that a number is not a legal number.
-Trying to do arithmetic with a non-numeric string will result in NaN (Not a Number).
+(5) NaN - Not a Number :-
+- NaN is a JavaScript reserved word indicating that a number is not a legal number.
+- Trying to do arithmetic with a non-numeric string will result in NaN (Not a Number).
 */
-console.log('NaN - Not a Number');
+console.log('(5) NaN - Not a Number ');
 let x12 = 100 / "Apple";
 console.log("A number divided by a non-numeric string becomes NaN (Not a Number)\n", x12); // output is NaN
 
@@ -135,10 +147,10 @@ console.log("The typeof NaN is number", typeof NaN); //number
 
 
 /*
-Infinity
-Infinity (or -Infinity) is the value JavaScript will return if you calculate a number outside the largest possible number.
+(6) Infinity :-
+- Infinity (or -Infinity) is the value JavaScript will return if you calculate a number outside the largest possible number.
 */
-console.log('Infinity');
+console.log('(6) Infinity ');
 let myNumber = 2;
 let txt = "";
 // Execute until Infinity
@@ -160,10 +172,10 @@ console.log('Infinity is a number: typeof Infinity returns number.');
 console.log("Infinity is a number\n",typeof Infinity); // number
 
 /*
-Hexadecimal
-JavaScript interprets numeric constants as hexadecimal if they are preceded by 0x.
+(7) Hexadecimal :-
+- JavaScript interprets numeric constants as hexadecimal if they are preceded by 0x.
 */
-console.log('Hexadecimal');
+console.log('(7) Hexadecimal');
 let x18 = 0xFF;
 console.log(x18); // 255
 
@@ -185,13 +197,13 @@ console.log("Decimal 32 = " + "\n\n" +
 "Binary (base 2): " + myNumbers.toString(2));                  // 100000
 
 /*
-JavaScript Numbers as Objects
+(8) JavaScript Numbers as Objects :-
 Normally JavaScript numbers are primitive values created from literals.
 let x = 123;
 But numbers can also be defined as objects with the keyword new.
 let y = new Number(123);
 */
-console.log('JavaScript Numbers as Objects');
+console.log('(8) JavaScript Numbers as Objects');
 let x19 = 123;
 let y19 = new Number(123);
 console.log(typeof x19); // Number

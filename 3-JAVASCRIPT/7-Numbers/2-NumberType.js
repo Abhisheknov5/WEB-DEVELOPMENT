@@ -1,5 +1,4 @@
 /*
-<!--
 1. Number Type:-
 - JavaScript Number Type includes
    

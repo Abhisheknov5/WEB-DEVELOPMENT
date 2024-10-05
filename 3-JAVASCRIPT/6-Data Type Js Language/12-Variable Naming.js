@@ -1,5 +1,6 @@
 /*
-        Variable Naming
+Variable Naming
+
 Variable Naming:- Variable Name must start with an Alphabet.
 -> You can start with "_" but not recommended to use Special Characters.
 -> It can have alpha numeric name.

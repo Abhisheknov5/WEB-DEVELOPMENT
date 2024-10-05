@@ -1,5 +1,5 @@
 /*
-        Hoisting
+Hoisting
 Hoisting:- Hoisting is the process of configuring a Variable declaration or initialization after 
 using the Variable.
 -> There is no Order dependency for declaring and using.

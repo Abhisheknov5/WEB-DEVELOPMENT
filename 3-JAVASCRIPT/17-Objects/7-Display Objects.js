@@ -1,4 +1,13 @@
 /*
+(1) JavaScript Display Objects 
+(2) Displaying Object Properties
+(3) Displaying Properties in a Loop
+(4) Using Object.values()
+(5) Using Object.entries() 
+(6) Using JSON.stringify()
+*/
+
+/*
 (1) JavaScript Display Objects :-
 How to Display JavaScript Objects?
 

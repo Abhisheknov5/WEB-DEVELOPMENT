@@ -1,4 +1,15 @@
 /*
+(1) Object Constructor Functions 
+(2) Property Default Values 
+(3) Adding a Property to an Object
+(4) Adding a Property to a Constructor 
+(5) Constructor Function Methods
+(6) Adding a Method to an Object
+(7) Built-in JavaScript Constructors
+*/
+
+
+/*
 (1) Object Constructor Functions :-
 - Sometimes we need to create many objects of the same type.
 - To create an object type we use an object constructor function.

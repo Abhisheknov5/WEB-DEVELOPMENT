@@ -1,5 +1,11 @@
 /*
-JavaScript Object Methods :-
+(1) JavaScript Object Methods
+(2) Accessing Object Methods
+(3) Using JavaScript Methods
+*/
+
+/*
+(1) JavaScript Object Methods :-
 
 - Object methods are actions that can be performed on objects.
 - A method is a function definition stored as a property value.
@@ -11,7 +17,7 @@ age	50
 eyeColor	blue
 fullName	function() {return this.firstName + " " + this.lastName;}
 */
-console.log('1 JavaScript Object Methods');
+console.log('(1) JavaScript Object Methods');
 
 // Define a Javascript Object with a Method
 const Person1 = {
@@ -33,13 +39,13 @@ console.log(Person1.fullName());
 */
 
 /*
-Accessing Object Methods :-
+(2) Accessing Object Methods :-
 -You access an object method with the following syntax:
 
 objectName.methodName()
 - If you invoke the fullName property with (), it will execute as a function:
 */
-console.log(' 2 Accesing Object Methods');
+console.log('(2) Accesing Object Methods');
 
 const Person2 = {
     firstName: "Akash",
@@ -75,10 +81,10 @@ const Person3 = {
   // Op is = Abhishek Kumar
 
   /*
-Using JavaScript Methods :-
+(3) Using JavaScript Methods :-
 - This example uses the JavaScript toUpperCase() method to convert a text to uppercase:
   */
- console.log('3 JavaScript Methods toUpperCase()');
+ console.log('(3) JavaScript Methods toUpperCase()');
 
  // Create an Object
  const Person4 = {

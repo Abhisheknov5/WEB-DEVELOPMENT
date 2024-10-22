@@ -1,4 +1,12 @@
 /*
+(1) JavaScript Object Literal 
+(2) Create an empty JavaScript object using new Object(), and add 4 properties:
+(3) Object Constructor Functions 
+(4) Property Default Values
+*/
+
+
+/*
 JavaScript Object Definition :-
 
 Methods for Defining JavaScript Objects:-

@@ -6,6 +6,7 @@
 (5) JavaScript Code Blocks 
 (6) JavaScript Keywords 
 */
+
 /*
 (1) Statment :-
 - JavaScript statements are composed of Values, Operators, Expressions, Keywords, and Comments. 

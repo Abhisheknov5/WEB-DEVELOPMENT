@@ -1,4 +1,14 @@
 /*
+(1) JavaScript Objects
+(1) JavaScript Variables
+(2) JavaScript Objects
+(3) JavaScript Object Definition 
+(4) Accessing Object Properties
+(5)JavaScript Object Methods
+(6) JavaScript Objects are Mutable
+*/
+
+/*
 (1) JavaScript Objects:-
 - In real life, objects are things like: houses, cars, people, animals, or any other subjects.
 - Here is a car object example:
@@ -188,7 +198,7 @@ eyeColor	blue
 */
 
 /*
-(3) Accessing Object Properties :-
+(4) Accessing Object Properties :-
 
 - You can access object properties in two ways:
 
@@ -196,7 +206,7 @@ objectName.propertyName
 objectName["propertyName"]
 */
 
-console.log('(3) Accessing Object Properties ');
+console.log('(4) Accessing Object Properties ');
 console.log('objectName.propertyName');
 
 // Create an Object
@@ -224,7 +234,7 @@ console.log("The last name is " + Person5["lastName"]);
 // Op is = The last name is Kumar
 
 /*
-(4)JavaScript Object Methods :-
+(5)JavaScript Object Methods :-
 
 - Methods are actions that can be performed on objects.
 
@@ -237,7 +247,7 @@ age	50
 eyeColor	blue
 fullName	function() {return this.firstName + " " + this.lastName;}
 */
-console.log('(4)JavaScript Object Methods :-');
+console.log('(5)JavaScript Object Methods :-');
 
 const Person6 = {
     firstName: "Abhishek",
@@ -311,7 +321,7 @@ undefined	undefined	undefined is always undefined
 */
 
 /*
-(5) JavaScript Objects are Mutable :-
+(6) JavaScript Objects are Mutable :-
 Objects are mutable: They are addressed by reference, not by value.
 
 If person is an object, the following statement will not create a copy of person:
@@ -323,7 +333,7 @@ The object x and the object person share the same memory address.
 
 Any changes to x will also change person:
 */
-console.log('(5) JavaScript Objects are Mutable :- ');
+console.log('(6) JavaScript Objects are Mutable :- ');
 
 // Create an Object
 const Person7 = {

@@ -1,4 +1,15 @@
 /*
+(1) JavaScript Object Methods
+(1) General Methods
+(2) JavaScript Object.entries()
+(3) JavaScript Object.fromEntries()
+(4) JavaScript Object.values()
+(5) JavaScript Object.groupBy()
+(6) JavaScript Object.keys()
+(7) JavaScript for...in Loop
+*/
+
+/*
 (1) JavaScript Object Methods :-
 - JavaScript Object Methods can be grouped into:
 
